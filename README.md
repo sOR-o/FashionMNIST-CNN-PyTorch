@@ -20,9 +20,26 @@ Three different models for the FashionMNIST dataset and compared their performan
 
 ### Confusion Matrix
 Generated a confusion matrix for FashionMNISTModelV2, the best-performing model, to better understand its classification performance. The confusion matrix provides insights into how well the model is classifying different classes within the dataset.
+###### Classes
+
+| T-shirt/top | Trouser | Pullover | Dress | Coat |
+|-------------|---------|----------|-------|------|
+| Sandal      | Shirt   | Sneaker  | Bag   | Ankle boot |
+
+
 <div style="text-align:center">
     <img src="https://github.com/sOR-o/FashionMNIST-CNN-PyTorch/blob/main/assets/confusionMatrix.png" height="600" width="600">
 </div>
+
+### Confusion Matrix Insights
+
+- **Overall Performance**: The main diagonal contains high values, indicating effective classification across most classes.
+- **Misclassifications**: Off-diagonal elements show instances of misclassification. For example, T-shirt/top instances are occasionally misclassified as shirts or pullovers.
+- **Confusion between Similar Classes**: Similar classes like T-shirt/top, Shirt, and Pullover may be confused due to their visual similarities.
+- **Performance Variation**: Some classes, like Ankle boot and Sneaker, have high accuracy, while others, like Shirt and Pullover, exhibit more frequent misclassifications.
+- **Potential Improvements**: Strategies to reduce misclassifications between similar classes and improve overall model performance can be explored.
+
+
 
 -Can be improved by transfer learning (obviously 😉)
 
